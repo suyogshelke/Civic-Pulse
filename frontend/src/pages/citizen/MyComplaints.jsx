@@ -39,7 +39,7 @@ export default function MyComplaints() {
     { key: 'status', label: 'Status', sortable: true, render: (r) => <StatusBadge status={r.status} /> },
     { key: 'priority', label: 'Priority', sortable: true, value: (r) => r.priority, render: (r) => <PriorityBadge priority={r.priority} subtle /> },
     { key: 'createdAt', label: 'Filed on', sortable: true, value: (r) => new Date(r.createdAt).getTime(), render: (r) => formatDate(r.createdAt) },
-    { key: 'action', label: '', render: (r) => <i className="bi bi-chevron-right text-muted" /> },
+    { key: 'action', label: '', render: (_r) => <i className="bi bi-chevron-right text-muted" /> },
   ];
 
   return (

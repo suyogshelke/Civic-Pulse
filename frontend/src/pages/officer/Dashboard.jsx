@@ -10,7 +10,7 @@ import EmptyState from '../../components/common/EmptyState';
 import StatusBadge from '../../components/common/StatusBadge';
 import PriorityBadge from '../../components/common/PriorityBadge';
 import { PRIORITY_META, STATUS, ROLE_LABELS } from '../../utils/constants';
-import { formatTicket, timeAgo, daysBetween } from '../../utils/formatters';
+import { formatTicket, daysBetween } from '../../utils/formatters';
 
 export default function OfficerDashboard() {
   useDocumentTitle('Dashboard');

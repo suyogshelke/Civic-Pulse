@@ -49,7 +49,6 @@ export default function DataTable({
       });
     }
     return data;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rows, debounced, sort, columns]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));

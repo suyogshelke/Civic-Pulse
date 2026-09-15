@@ -5,11 +5,10 @@ import useDocumentTitle from '../../hooks/useDocumentTitle';
 import PageHeader from '../../components/common/PageHeader';
 import StatCard from '../../components/common/StatCard';
 import Loader from '../../components/common/Loader';
-import StatusBadge from '../../components/common/StatusBadge';
 import PriorityBadge from '../../components/common/PriorityBadge';
 import TrendChart from '../../components/charts/TrendChart';
 import StatusDonut from '../../components/charts/StatusDonut';
-import { STATUS_META, PRIORITY_META, STATUS } from '../../utils/constants';
+import { STATUS_META, STATUS } from '../../utils/constants';
 import { formatTicket, timeAgo, formatNumber } from '../../utils/formatters';
 
 export default function AdminDashboard() {

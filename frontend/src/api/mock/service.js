@@ -150,7 +150,6 @@ async function createComplaint(citizen, form) {
   const attachments = [];
   if (form.files?.length) {
     for (const file of form.files) {
-      // eslint-disable-next-line no-await-in-loop
       const dataUrl = await fileToDataUrl(file);
       attachments.push({ id: nextId('complaints') * 10 + attachments.length, name: file.name, type: file.type, size: file.size, dataUrl });
     }
@@ -223,7 +222,6 @@ async function transitionComplaint(actor, id, { toStatus, remark, officerId, res
   if (files?.length) {
     complaint.attachments = complaint.attachments || [];
     for (const file of files) {
-      // eslint-disable-next-line no-await-in-loop
       const dataUrl = await fileToDataUrl(file);
       complaint.attachments.push({ id: Date.now() + complaint.attachments.length, name: file.name, type: file.type, size: file.size, dataUrl, resolution: true });
     }

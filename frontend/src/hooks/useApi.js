@@ -35,7 +35,6 @@ export default function useApi(fetcher, deps = [], { immediate = true } = {}) {
     } finally {
       if (mounted.current) setLoading(false);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

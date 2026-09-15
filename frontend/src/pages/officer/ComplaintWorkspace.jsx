@@ -105,7 +105,7 @@ export default function ComplaintWorkspace() {
 
             <h6 className="fw-bold">Description</h6>
             <p className="text-secondary">{complaint.description}</p>
-            <h6 className="fw-bold mt-3">Citizen's evidence</h6>
+            <h6 className="fw-bold mt-3">Citizen&apos;s evidence</h6>
             <AttachmentGallery attachments={(complaint.attachments || []).filter((a) => !a.resolution)} />
           </div>
 
