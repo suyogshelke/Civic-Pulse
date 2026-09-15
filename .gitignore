@@ -1,0 +1,39 @@
+# ---- Node / frontend ----
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Environment ----
+.env.local
+.env.*.local
+# The frontend .env holds no secrets (only the mock-API flag, app name and
+# proxy path) and is committed so the instant demo runs straight after clone.
+!.env
+!.env.example
+
+# ---- Java / backend ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+uploads/
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# ---- OS ----
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "eslint.workingDirectories": ["frontend"],
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "[java]": {
+    "editor.tabSize": 4
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/target": true
+  },
+  "java.compile.nullAnalysis.mode": "automatic"
+}
